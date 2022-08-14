@@ -29,15 +29,26 @@ function Register({ onRegister }) {
             <form className="website__form" >
                 <h1 className="website__title">Регистрация</h1>
                 <label className="website__indent">
-                    <input type="email" id="email" required placeholder="Email" autoComplete="email"
-                           value={registerData.email} name="email" className="website__email"
+                    <input type="email"
+                           id="email"
+                           required
+                           placeholder="Email"
+                           autoComplete="email"
+                           value={registerData.email}
+                           name="email"
+                           className="website__email"
                            onChange={handleChange}
                     />
                 </label>
                 <label className="website__indent">
-                    <input type="password" id="password" required placeholder="Пароль"
-                           autoComplete="new-password" value={registerData.password}
-                           name="password" className="website__password"
+                    <input type="password"
+                           id="password"
+                           required
+                           placeholder="Пароль"
+                           autoComplete="new-password"
+                           value={registerData.password}
+                           name="password"
+                           className="website__password"
                            onChange={handleChange}
                     />
                 </label>

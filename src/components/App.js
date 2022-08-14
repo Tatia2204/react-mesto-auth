@@ -124,7 +124,6 @@ function App() {
             .then((res) => {
                 setIsLoggedIn(true);
                 setUserEmail(data.email);
-                console.log("Тест", data);
                 localStorage.setItem('jwt', res.token);
                 history.push('/');
             })
@@ -166,6 +165,9 @@ function App() {
             .then(() => {
                 setIsLoggedIn(true);
                 localStorage.getItem('jwt');
+            })
+            .catch((err) => {
+                console.log(`Ошибка: ${err}`);
             });
     }
 

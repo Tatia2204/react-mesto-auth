@@ -27,13 +27,24 @@ function Login({ onLogin }) {
         <div className="website">
             <form className="website__form" >
                 <h1 className="website__title">Вход</h1>
-                <input type="email" id="email" required placeholder="Email" autoComplete="email"
-                       value={loginData.email} name="email" className="website__email"
+                <input type="email"
+                       id="email"
+                       required
+                       placeholder="Email"
+                       autoComplete="email"
+                       value={loginData.email}
+                       name="email"
+                       className="website__email"
                        onChange={handleChange}
                 />
-                <input type="password" id="password" required placeholder="Пароль"
-                       autoComplete="new-password" value={loginData.password}
-                       name="password" className="website__password"
+                <input type="password"
+                       id="password"
+                       required
+                       placeholder="Пароль"
+                       autoComplete="new-password"
+                       value={loginData.password}
+                       name="password"
+                       className="website__password"
                        onChange={handleChange}
                 />
             </form>
