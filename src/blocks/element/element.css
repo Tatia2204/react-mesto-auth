@@ -1,5 +1,5 @@
 .element {
-    max-width: 96%;
+    max-width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@
 @media screen and (max-width: 610px) {
     .element {
         max-width: 98%;
-        margin: 0 19px;
+        margin-left: 19px;
         grid-template-rows: 80% 20%;
     }
 }

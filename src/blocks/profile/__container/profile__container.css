@@ -1,4 +1,11 @@
 .profile__container {
     position: relative;
-    margin: auto;
+    margin: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .profile__container {
+        margin: auto;
+
+    }
 }

@@ -25,7 +25,7 @@ function Register({ onRegister }) {
     }
 
     return (
-        <div className="website">
+        <div className="website" >
             <form className="website__form" >
                 <h1 className="website__title">Регистрация</h1>
                 <label className="website__indent">

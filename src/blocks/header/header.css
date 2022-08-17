@@ -7,16 +7,15 @@
     position: relative;
 }
 
-@media screen and (max-width: 1489px) {
+@media screen and (min-width: 1500px) {
     .header {
-        margin: 45px 216px 40px 216px;
-        width: 60%;
+        width: 52%;
     }
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1175px) {
     .header {
-        width: 66%;
+        width: 82%;
     }
 }
 

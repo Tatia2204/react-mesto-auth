@@ -3,12 +3,12 @@ import Card from "./Card.js"
 import { CurrentUser } from "../contexts/CurrentUser.js";
 
 function Main ({cards, onEditAvatar, onEditProfile, onAddPlace, onCardClick,
-                   onCardLike, onCardDelete}) {
+                   onCardLike, onCardDelete }) {
     const currentUser = useContext(CurrentUser);
     const { name, about, avatar } = currentUser;
 
     return (
-        <main className="content">
+        <main className="content" >
             <section className="profile">
                 <div className="profile__container">
                     <button

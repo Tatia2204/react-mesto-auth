@@ -7,6 +7,7 @@
     background: transparent url("../../../images/plus.svg") no-repeat center;
     margin-top: 33px;
     margin-bottom: 33px;
+    margin-right: 0;
     padding: 0;
     cursor: pointer;
     background-size: 22px 22px;
@@ -21,7 +22,7 @@
 
 @media screen and (max-width: 380px) {
     .profile__info-add {
-        width: 100%;
+        width: 282px;
         background-size: 16px 16px;
     }
 }
