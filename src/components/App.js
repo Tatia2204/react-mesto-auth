@@ -131,22 +131,6 @@ function App() {
                 console.log(err);
                 handleInfoTooltip();
             });
-        api
-            .getProfileInfo()
-            .then((data) => {
-                setCurrentUser(data);
-            })
-            .catch((err) => {
-                console.log(`Ошибка: ${err}`);
-            });
-        api
-            .getInitialCards()
-            .then((data) => {
-                setCards(data);
-            })
-            .catch((err) => {
-                console.log(`Ошибка: ${err}`);
-            });
     }
 
     function handleRegister(data) {
@@ -170,6 +154,28 @@ function App() {
         history.push('/sign-in');
     }
 
+
+    useEffect(() => {
+        if (isLoggedIn === true) {
+            api
+                .getProfileInfo()
+                .then((data) => {
+                    setCurrentUser(data);
+                })
+                .catch((err) => {
+                    console.log(`Ошибка: ${err}`);
+                });
+            api
+                .getInitialCards()
+                .then((data) => {
+                    setCards(data);
+                })
+                .catch((err) => {
+                    console.log(`Ошибка: ${err}`);
+                });
+        }
+    }, [isLoggedIn]);
+
     useEffect(() => {
         const token = localStorage.getItem('jwt');
         if (token) {
@@ -178,7 +184,7 @@ function App() {
                 .then((res) => {
                     setUserEmail(res.data.email);
                     setIsLoggedIn(true);
-                    history.push('/sign-in');
+                    history.push('/');
                 })
                 .catch((err) => {
                     localStorage.removeItem('jwt');
