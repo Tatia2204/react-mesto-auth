@@ -58,3 +58,11 @@ npm install
 
 **Запустить приложение:**
 npm run start
+
+### Языки:
+
+* JavaScript
+
+### Библиотеки:
+
+* ReactJS
