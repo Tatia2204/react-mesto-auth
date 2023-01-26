@@ -80,3 +80,4 @@ npm run start
 * [Чеклист9](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-12/index.html).
 
 ### Ссылка на сайт:
+https://tatia2204.github.io/react-mesto-auth/
